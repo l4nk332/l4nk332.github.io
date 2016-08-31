@@ -243,7 +243,7 @@ html, body {
 }
 
 .code-guild {
-  background-position: top;
+  background-position: center;
   background-image: url("../assets/img/projects/project_codeguild.png");
 }
 
@@ -335,6 +335,16 @@ html, body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+
+.gallery-codeguild {
+  background-position: top;
+  background-image: url("../assets/img/gallery/gallery_codeguild.png");
+}
+
+.gallery-modal {
+  background-image: url("../assets/img/gallery/gallery_modal.png");
 }
 
 .gallery-marine {
