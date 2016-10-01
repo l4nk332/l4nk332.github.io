@@ -238,6 +238,11 @@ html, body {
   background-size: cover;
 }
 
+.abstract-cityscape {
+  background-position: center;
+  background-image: url("../assets/img/projects/project_abstractcityscape.png");
+}
+
 .chess-ai {
   background-image: url("../assets/img/projects/project_chessai.png");
 }
@@ -280,6 +285,14 @@ html, body {
   font-size: 1em;
   text-align: left;
   font-family: 'Pontano Sans', sans-serif;
+}
+
+.info-link {
+  color: #629485;
+}
+
+.info-link:hover {
+  color: #75B09C;
 }
 
 /* ==  Gallery Section  == */
@@ -337,6 +350,10 @@ html, body {
   background-size: cover;
 }
 
+.gallery-cubematrix {
+  background-position:center;
+  background-image: url("../assets/img/gallery/gallery_cube_matrix.png");
+}
 
 .gallery-codeguild {
   background-position: top;
