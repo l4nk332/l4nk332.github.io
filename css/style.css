@@ -146,13 +146,10 @@ html, body {
   font-size: 2rem;
   color: #454851;
   z-index: 3;
-  /* ----------- Laptop Screens ----------- */
 }
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
-  .arrow:hover {
-    cursor: pointer;
-    color: #686d7a;
-  }
+.arrow:hover {
+  cursor: pointer;
+  color: #686d7a;
 }
 
 /* ==  Project Section  == */
