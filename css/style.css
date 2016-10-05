@@ -350,6 +350,11 @@ html, body {
   background-size: cover;
 }
 
+.gallery-messaging-mock {
+  background-position: left top;
+  background-image: url("../assets/img/gallery/gallery_messaging_mock.png");
+}
+
 .gallery-cubematrix {
   background-position:center;
   background-image: url("../assets/img/gallery/gallery_cube_matrix.png");
