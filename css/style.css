@@ -196,10 +196,9 @@ html, body {
           align-items: center;
   /* ----------- Laptop Screens ----------- */
 }
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
-  .project:hover .underbar {
-    width: 100%;
-  }
+
+.project:hover .underbar {
+width: 100%;
 }
 
 .project-title {
@@ -659,7 +658,7 @@ html, body {
 }
 
 .codepen {
-  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-1/profile/profile-512_25.jpg");
+  background-image: url("https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Large.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -706,7 +705,7 @@ html, body {
   text-align: center;
 }
 
-.footer p a, .footer p a:link, .footer p a:visited, .footer p a:hover, .footer p a:active {
+.text-link, .text-link:link, .text-link:visited, .text-link:hover, .text-link:active {
   color: #75B09C;
   text-decoration: none;
 }
