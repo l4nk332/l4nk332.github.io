@@ -346,9 +346,9 @@ width: 100%;
   background-size: cover;
 }
 
-.gallery-messaging-mock {
-  background-position: left top;
-  background-image: url("../assets/img/gallery/gallery_messaging_mock.png");
+.gallery-elm-calculator {
+  background-position: top;
+  background-image: url("../assets/img/gallery/gallery_elm_calculator.png");
 }
 
 .gallery-cubematrix {
@@ -478,11 +478,10 @@ width: 100%;
       -ms-user-select: none;
           user-select: none;
 }
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
-  .left:hover, .right:hover {
-    cursor: pointer;
-    background-color: #686d7a;
-  }
+
+.left:hover, .right:hover {
+cursor: pointer;
+background-color: #686d7a;
 }
 
 .icon {
