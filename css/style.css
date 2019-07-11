@@ -232,6 +232,12 @@ width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.project-palette {
+  background-position: center;
+  background-image: url("../assets/img/projects/project_project_palette.png");
 }
 
 .abstract-cityscape {
@@ -344,6 +350,101 @@ width: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.project-palette {
+  background-position: center;
+  background-image: url("../assets/img/projects/project_project_palette.png");
+}
+
+.abstract-cityscape {
+  background-position: center;
+  background-image: url("../assets/img/projects/project_abstractcityscape.png");
+}
+
+.chess-ai {
+  background-image: url("../assets/img/projects/project_chessai.png");
+}
+
+.code-guild {
+  background-position: center;
+  background-image: url("../assets/img/projects/project_codeguild.png");
+}
+
+.computer-tennis {
+  background-image: url("../assets/img/projects/project_computertennis.png");
+}
+
+.heart-caller {
+  background-position: top;
+  background-image: url("../assets/img/projects/project_heartcaller.png");
+}
+
+.project-details {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  padding: 0 0.5em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  box-sizing: border-box;
+  font-size: 1em;
+  text-align: left;
+  font-family: 'Pontano Sans', sans-serif;
+}
+
+.info-link {
+  color: #629485;
+}
+
+.info-link:hover {
+  color: #75B09C;
+}
+
+/* ==  Gallery Section  == */
+.gallery-section {
+  width: 100%;
+  height: auto;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gallery-showcase {
+  width: 700px;
+  min-width: 300px;
+  height: auto;
+  margin: 0.5em 2em;
+}
+
+.gallery-
 }
 
 .gallery-elm-calculator {
