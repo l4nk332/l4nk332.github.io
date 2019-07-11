@@ -66,7 +66,7 @@ function generateCipher(list, length) {
 function render() {
 	var charList = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", " ", "-", "_", "^", "+", "=", "%", "#", "@", "!", "~", "?"];
 
-	var decryptStr = "Full-Stack Developer";
+	var decryptStr = "Frontend Developer";
 	var time = new Date().getTime();
 	var delta = undefined;
 	function decrypt() {
