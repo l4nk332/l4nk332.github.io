@@ -346,7 +346,7 @@ width: 100%;
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #EF3E36;
+  background-color: #F5F5F5;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -442,9 +442,6 @@ width: 100%;
   min-width: 300px;
   height: auto;
   margin: 0.5em 2em;
-}
-
-.gallery-
 }
 
 .gallery-elm-calculator {
