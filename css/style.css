@@ -240,7 +240,7 @@ width: 100%;
 }
 
 .project-palette {
-  background-position: center;
+  background-position: top center;
   background-image: url("../assets/img/projects/project_project_palette.png");
 }
 
