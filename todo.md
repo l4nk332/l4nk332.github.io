@@ -1,6 +1,3 @@
-- Add to Projects:
-  - Project-Palette
-
 - Remove from Gallery:
   - Codeguild Gallery
   - Chat dropdown
