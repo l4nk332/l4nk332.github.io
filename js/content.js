@@ -61,9 +61,68 @@ const PROJECTS = [
   },
 ]
 
+function GalleryShowcase({details, imageName, url }) {
+  return (
+    div({class: 'gallery-showcase'}, [
+      div({class: `gallery-embed ${imageName}`},
+        a({
+          href: url,
+          target: '_blank',
+          style: {width: '100%', height: '100%', display: 'inline-block'}
+        })
+      ),
+      div({class: 'gallery-description'}, [
+        hr({class: 'underbar'}),
+        p(details)
+      ])
+    ])
+  )
+}
+
+const GALLERY = [
+  {
+    imageName: 'gallery-elm-calculator',
+    url: 'elm-calculator.html',
+    details: 'A simple calculator built in Elm.'
+  },
+  {
+    imageName: 'gallery-cubematrix',
+    url: 'http://codepen.io/l4nk33/live/RGAOor',
+    details: 'A 3D cube matrix created with Three.js. Click and drag to move. Pinch to zoom.'
+  },
+  {
+    imageName: 'gallery-marine',
+    url: 'https://codepen.io/l4nk33/full/VjWjRZ/',
+    details: 'A pure CSS animated implementation of the Marine Layer clothing brand.'
+  },
+  {
+    imageName: 'gallery-particles',
+    url: 'https://codepen.io/l4nk33/full/mENLmW/',
+    details: 'A particle simulation created through the HTML Canvas API done without any libraries.'
+  },
+  {
+    imageName: 'gallery-cube',
+    url: 'https://codepen.io/l4nk33/full/jPRgRK/',
+    details: 'A CSS rendering of a cube. JavaScript keypress event handlers allow for the rotation of the cube to a given side (1-6) or the ability to toggle backface-visibility (B).'
+  },
+  {
+    imageName: 'gallery-checkbox',
+    url: 'https://codepen.io/l4nk33/full/vKJjOL/',
+    details: 'Custom checkboxes with a flat-ui color scheme that glow on hover.'
+  },
+  {
+    imageName: 'gallery-jala',
+    url: 'https://codepen.io/l4nk33/full/jWXBmx/',
+    details: 'An interface for a To-Do List application that changes animation based on the time of day (dusk, morning, day, dawn, night). Backdrop completely done in HTML canvas.'
+  }
+]
 
 window.addEventListener('DOMContentLoaded', event => {
-  const section = document.querySelector('.project-section')
-  section.innerHTML = ''
-  section.appendChild(fragment(PROJECTS.map(Project)))
+  const projectSection = document.querySelector('.project-section')
+  projectSection.innerHTML = ''
+  projectSection.appendChild(fragment(PROJECTS.map(Project)))
+
+  const gallerySection = document.querySelector('.gallery-section')
+  gallerySection.innerHTML = ''
+  gallerySection.appendChild(fragment(GALLERY.map(GalleryShowcase)))
 })
