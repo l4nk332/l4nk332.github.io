@@ -79,50 +79,55 @@ function GalleryShowcase({details, imageName, url }) {
   )
 }
 
-const GALLERY = [
-  {
-    imageName: 'gallery-elm-calculator',
-    url: 'elm-calculator.html',
-    details: 'A simple calculator built in Elm.'
-  },
-  {
-    imageName: 'gallery-cubematrix',
-    url: 'http://codepen.io/l4nk33/live/RGAOor',
-    details: 'A 3D cube matrix created with Three.js. Click and drag to move. Pinch to zoom.'
-  },
-  {
-    imageName: 'gallery-marine',
-    url: 'https://codepen.io/l4nk33/full/VjWjRZ/',
-    details: 'A pure CSS animated implementation of the Marine Layer clothing brand.'
-  },
-  {
-    imageName: 'gallery-particles',
-    url: 'https://codepen.io/l4nk33/full/mENLmW/',
-    details: 'A particle simulation created through the HTML Canvas API done without any libraries.'
-  },
-  {
-    imageName: 'gallery-cube',
-    url: 'https://codepen.io/l4nk33/full/jPRgRK/',
-    details: 'A CSS rendering of a cube. JavaScript keypress event handlers allow for the rotation of the cube to a given side (1-6) or the ability to toggle backface-visibility (B).'
-  },
-  {
-    imageName: 'gallery-checkbox',
-    url: 'https://codepen.io/l4nk33/full/vKJjOL/',
-    details: 'Custom checkboxes with a flat-ui color scheme that glow on hover.'
-  },
-  {
-    imageName: 'gallery-jala',
-    url: 'https://codepen.io/l4nk33/full/jWXBmx/',
-    details: 'An interface for a To-Do List application that changes animation based on the time of day (dusk, morning, day, dawn, night). Backdrop completely done in HTML canvas.'
-  }
-]
+const GALLERY = {
+  widgets: [
+    {
+      imageName: 'gallery-elm-calculator',
+      url: 'elm-calculator.html',
+      details: 'A simple calculator built in Elm.'
+    },
+    {
+      imageName: 'gallery-jala',
+      url: 'https://codepen.io/l4nk33/full/jWXBmx/',
+      details: 'An interface for a To-Do List application that changes animation based on the time of day (dusk, morning, day, dawn, night). Backdrop completely done in HTML canvas.'
+    }
+  ],
+  graphics: [
+    {
+      imageName: 'gallery-cubematrix',
+      url: 'http://codepen.io/l4nk33/live/RGAOor',
+      details: 'A 3D cube matrix created with Three.js. Click and drag to move. Pinch to zoom.'
+    },
+    {
+      imageName: 'gallery-particles',
+      url: 'https://codepen.io/l4nk33/full/mENLmW/',
+      details: 'A particle simulation created through the HTML Canvas API done without any libraries.'
+    }
+  ],
+  logos: [
+    {
+      imageName: 'gallery-marine',
+      url: 'https://codepen.io/l4nk33/full/VjWjRZ/',
+      details: 'A pure CSS animated implementation of the Marine Layer clothing brand.'
+    }
+  ],
+  misc: [
+    {
+      imageName: 'gallery-cube',
+      url: 'https://codepen.io/l4nk33/full/jPRgRK/',
+      details: 'A CSS rendering of a cube. JavaScript keypress event handlers allow for the rotation of the cube to a given side (1-6) or the ability to toggle backface-visibility (B).'
+    }
+  ]
+}
 
 window.addEventListener('DOMContentLoaded', event => {
-  const projectSection = document.querySelector('.project-section')
+  const projectSection = document.getElementById('projects')
   projectSection.innerHTML = ''
   projectSection.appendChild(fragment(PROJECTS.map(Project)))
 
-  const gallerySection = document.querySelector('.gallery-section')
-  gallerySection.innerHTML = ''
-  gallerySection.appendChild(fragment(GALLERY.map(GalleryShowcase)))
+  Object.entries(GALLERY).forEach(([id, values]) => {
+    const gallerySection = document.getElementById(id)
+    gallerySection.innerHTML = ''
+    gallerySection.appendChild(fragment(values.map(GalleryShowcase)))
+  })
 })

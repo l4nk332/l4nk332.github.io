@@ -36,7 +36,7 @@ render();
 // Scroll to header
 $("#down").click(function () {
 	$('html,body').animate({
-		scrollTop: $("#projects").offset().top }, 'slow');
+		scrollTop: $("#projects-header").offset().top }, 'slow');
 });
 
 /* Particle Animation */
