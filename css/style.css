@@ -15,13 +15,17 @@ html, body {
   font-family: 'Abel', sans-serif;
 }
 
+.loading {
+  font-size: 1rem;
+}
+
 .dark {
   background-color: #454851;
   color: #f3f3f3;
 }
 
 .section-title {
-  font-size: 4rem;
+  font-size: 3rem;
   align-self: center;
   text-align: center;
   margin: auto;
@@ -190,7 +194,7 @@ html, body {
 }
 
 .project-palette {
-  background-position: center;
+  background-position: top center;
   background-image: url("../assets/img/projects/project_project_palette.png");
 }
 
