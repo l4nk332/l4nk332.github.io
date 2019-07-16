@@ -22,3 +22,5 @@
   - Lightsaber
   - Starforce
   - CSS Spinner
+
+- Have all resources available for offline development
