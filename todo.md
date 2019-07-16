@@ -13,13 +13,9 @@
   - Starforce
   - CSS Spinner
 
-- Have all resources available for offline development
-
 - Set up Hotjar
 
 - Set up Sentry
 
 - Layout adjustments:
-  - Dark-mode sections for projects and bio.
   - Gallery items in two columns.
-  - White footer with bolded link.

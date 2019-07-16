@@ -1,3 +1,18 @@
+@font-face {
+  font-family: 'Abel';
+  src: url('/assets/fonts/Abel-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Bungee Hairline';
+  src: url('/assets/fonts/BungeeHairline-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Pontano Sans';
+  src: url('/assets/fonts/PontanoSans-Regular.ttf') format('truetype');
+}
+
 /* General Styles */
 html, body {
   background-color: #FAFFFD;
@@ -170,7 +185,7 @@ html, body {
   height: 0;
   border: none;
   margin: 0;
-  border-top: 2px solid #454851;
+  border-top: 1px solid #454851;
   transition: width 300ms ease;
 }
 
@@ -195,30 +210,30 @@ html, body {
 
 .project-palette {
   background-position: top center;
-  background-image: url("../assets/img/projects/project_project_palette.png");
+  background-image: url("/assets/img/projects/project_project_palette.png");
 }
 
 .abstract-cityscape {
   background-position: center;
-  background-image: url("../assets/img/projects/project_abstractcityscape.png");
+  background-image: url("/assets/img/projects/project_abstractcityscape.png");
 }
 
 .chess-ai {
-  background-image: url("../assets/img/projects/project_chessai.png");
+  background-image: url("/assets/img/projects/project_chessai.png");
 }
 
 .code-guild {
   background-position: center;
-  background-image: url("../assets/img/projects/project_codeguild.png");
+  background-image: url("/assets/img/projects/project_codeguild.png");
 }
 
 .computer-tennis {
-  background-image: url("../assets/img/projects/project_computertennis.png");
+  background-image: url("/assets/img/projects/project_computertennis.png");
 }
 
 .heart-caller {
   background-position: top;
-  background-image: url("../assets/img/projects/project_heartcaller.png");
+  background-image: url("/assets/img/projects/project_heartcaller.png");
 }
 
 .project-details {
@@ -234,14 +249,6 @@ html, body {
   font-size: 1em;
   text-align: left;
   font-family: 'Pontano Sans', sans-serif;
-}
-
-.info-link {
-  color: #629485;
-}
-
-.info-link:hover {
-  color: #75B09C;
 }
 
 /* ==  Gallery Section  == */
@@ -280,30 +287,30 @@ html, body {
 
 .project-palette {
   background-position: center;
-  background-image: url("../assets/img/projects/project_project_palette.png");
+  background-image: url("/assets/img/projects/project_project_palette.png");
 }
 
 .abstract-cityscape {
   background-position: center;
-  background-image: url("../assets/img/projects/project_abstractcityscape.png");
+  background-image: url("/assets/img/projects/project_abstractcityscape.png");
 }
 
 .chess-ai {
-  background-image: url("../assets/img/projects/project_chessai.png");
+  background-image: url("/assets/img/projects/project_chessai.png");
 }
 
 .code-guild {
   background-position: center;
-  background-image: url("../assets/img/projects/project_codeguild.png");
+  background-image: url("/assets/img/projects/project_codeguild.png");
 }
 
 .computer-tennis {
-  background-image: url("../assets/img/projects/project_computertennis.png");
+  background-image: url("/assets/img/projects/project_computertennis.png");
 }
 
 .heart-caller {
   background-position: top;
-  background-image: url("../assets/img/projects/project_heartcaller.png");
+  background-image: url("/assets/img/projects/project_heartcaller.png");
 }
 
 .project-details {
@@ -322,11 +329,12 @@ html, body {
 }
 
 .info-link {
-  color: #629485;
+  color: #75B09C;
+  text-decoration: none;
 }
 
 .info-link:hover {
-  color: #75B09C;
+  color: #629485;
 }
 
 /* ==  Gallery Section  == */
@@ -349,41 +357,41 @@ html, body {
 
 .gallery-elm-calculator {
   background-position: top;
-  background-image: url("../assets/img/gallery/gallery_elm_calculator.png");
+  background-image: url("/assets/img/gallery/gallery_elm_calculator.png");
 }
 
 .gallery-cubematrix {
   background-position:center;
-  background-image: url("../assets/img/gallery/gallery_cube_matrix.png");
+  background-image: url("/assets/img/gallery/gallery_cube_matrix.png");
 }
 
 .gallery-codeguild {
   background-position: top;
-  background-image: url("../assets/img/gallery/gallery_codeguild.png");
+  background-image: url("/assets/img/gallery/gallery_codeguild.png");
 }
 
 .gallery-modal {
-  background-image: url("../assets/img/gallery/gallery_modal.png");
+  background-image: url("/assets/img/gallery/gallery_modal.png");
 }
 
 .gallery-marine {
-  background-image: url("../assets/img/gallery/gallery_marine_layer.png");
+  background-image: url("/assets/img/gallery/gallery_marine_layer.png");
 }
 
 .gallery-particles {
-  background-image: url("../assets/img/gallery/gallery_particles.png");
+  background-image: url("/assets/img/gallery/gallery_particles.png");
 }
 
 .gallery-checkbox {
-  background-image: url("../assets/img/gallery/gallery_checkbox.png");
+  background-image: url("/assets/img/gallery/gallery_checkbox.png");
 }
 
 .gallery-cube {
-  background-image: url("../assets/img/gallery/gallery_dstrrnbw.png");
+  background-image: url("/assets/img/gallery/gallery_dstrrnbw.png");
 }
 
 .gallery-jala {
-  background-image: url("../assets/img/gallery/gallery_jala.png");
+  background-image: url("/assets/img/gallery/gallery_jala.png");
 }
 
 .gallery-description {
@@ -448,7 +456,7 @@ html, body {
   min-height: 300px;
   margin: 0;
   background-color: #2E3138;
-  background-image: url("https://avatars3.githubusercontent.com/u/13607977?v=3&s=460");
+  background-image: url("/assets/img/bio/avatar.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -502,28 +510,28 @@ html, body {
 }
 
 .codewars {
-  background-image: url("http://www.softlab.ntua.gr/~nickie/images/logo/codewars.png");
+  background-image: url("/assets/img/bio/codewars_logo.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .codepen {
-  background-image: url("https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Large.png");
+  background-image: url("/assets/img/bio/codepen_logo.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .linkedin {
-  background-image: url("https://cdn0.iconfinder.com/data/icons/social-network-7/50/9-128.png");
+  background-image: url("/assets/img/bio/linkedin_logo.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
 .github {
-  background-image: url("http://image.flaticon.com/icons/svg/38/38401.svg");
+  background-image: url("/assets/img/bio/github_logo.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -537,16 +545,12 @@ html, body {
   justify-content: center;
   align-items: center;
 }
+
 .footer p {
   width: 100%;
   margin: 0 auto;
-  color: #75B09C;
   text-align: center;
-}
-
-.text-link, .text-link:link, .text-link:visited, .text-link:hover, .text-link:active {
-  color: #75B09C;
-  text-decoration: none;
+  font-weight: bold;
 }
 
 /* Animations */

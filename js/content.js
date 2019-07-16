@@ -1,4 +1,4 @@
-import { element } from './renga.min.js'
+import { element } from '../assets/libraries/renga.min.js'
 
 const { div, a, h3, hr, p, fragment } = element
 
