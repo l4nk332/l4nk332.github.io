@@ -16,7 +16,10 @@ function Project({name, details, imageName, url }) {
           style: {width: '100%', height: '100%', display: 'inline-block'}
         })
       ),
-      div({class: 'project-title'}, [h3(name), hr({class: 'underbar'})]),
+      Boolean(name) && div({class: 'project-title'}, [
+        h3(name),
+        hr({class: 'underbar'})
+      ]),
       div({class: 'project-details'}, p(details))
     ])
   )
@@ -128,6 +131,6 @@ window.addEventListener('DOMContentLoaded', event => {
   Object.entries(GALLERY).forEach(([id, values]) => {
     const gallerySection = document.getElementById(id)
     gallerySection.innerHTML = ''
-    gallerySection.appendChild(fragment(values.map(GalleryShowcase)))
+    gallerySection.appendChild(fragment(values.map(Project)))
   })
 })
