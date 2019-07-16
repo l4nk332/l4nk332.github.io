@@ -13,7 +13,8 @@
   src: url('/assets/fonts/PontanoSans-Regular.ttf') format('truetype');
 }
 
-/* General Styles */
+/* Base Styles */
+/* =========== */
 html, body {
   background-color: #FAFFFD;
   color: #454851;
@@ -34,19 +35,6 @@ html, body {
   font-size: 1rem;
 }
 
-.dark {
-  background-color: #454851;
-  color: #f3f3f3;
-}
-
-.section-title {
-  font-size: 3rem;
-  align-self: center;
-  text-align: center;
-  margin: auto;
-  padding: 0.5em 0;
-  font-family: 'Bungee Hairline', system-ui;
-}
 @media (max-width: 500px) {
   .section-title {
     font-size: 2.5rem;
@@ -58,7 +46,18 @@ html, body {
     font-size: 0.9em;
   }
 }
-/* Landing page section */
+
+/* Sections */
+/* ======== */
+.section-title {
+  font-size: 3rem;
+  align-self: center;
+  text-align: center;
+  margin: auto;
+  padding: 0.5em 0;
+  font-family: 'Bungee Hairline', system-ui;
+}
+
 .landing-section {
   width: 100%;
   height: 100vh;
@@ -69,6 +68,13 @@ html, body {
   overflow-x: hidden;
 }
 
+.dark {
+  background-color: #454851;
+  color: #f3f3f3;
+}
+
+/* Landing Section */
+/* =============== */
 #canvas {
   position: absolute;
   z-index: 1;
@@ -79,6 +85,7 @@ html, body {
   top: 0;
   opacity: 0.3;
 }
+
 @media (max-device-width: 1024px) {
   #canvas {
     display: none;
@@ -100,6 +107,7 @@ html, body {
   display: inline-block;
   margin: 0.1em;
 }
+
 @media (max-width: 480px) {
   .first, .last {
     font-size: 3rem;
@@ -125,6 +133,7 @@ html, body {
   opacity: 0;
   z-index: 3;
 }
+
 @media (max-width: 480px) {
   .cipher {
     font-size: 1rem;
@@ -141,8 +150,9 @@ html, body {
   color: #686d7a;
 }
 
-/* ==  Project Section  == */
-.project-section {
+/* Showcase Sections */
+/* ================= */
+.section-content {
   width: 100%;
   height: auto;
   padding: 1rem;
@@ -153,7 +163,7 @@ html, body {
   align-items: flex-start;
 }
 
-.project {
+.showcase {
   max-width: 400px;
   min-width: 300px;
   margin: 1em;
@@ -164,23 +174,23 @@ html, body {
   align-items: center;
 }
 
-.project:hover .underbar {
+.showcase:hover .underbar {
   width: 100%;
 }
 
-.project-title {
+.showcase-title {
   font-size: 1.5rem;
   width: 100%;
 }
 
-.project-title h3 {
+.showcase-title h3 {
   font-family: 'Abel', sans-serif;
   text-align: left;
   padding: 0.3em;
   margin: 0.1em auto;
 }
 
-.project-title .underbar {
+.showcase-title .underbar {
   width: 0;
   height: 0;
   border: none;
@@ -189,23 +199,44 @@ html, body {
   transition: width 300ms ease;
 }
 
-.dark .project-title .underbar {
+.dark .showcase-title .underbar {
   border-top-color: #f3f3f3;
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
-  .project-title .underbar {
+  .showcase-title .underbar {
     width: 100%;
   }
 }
 
-.project-image {
+.showcase-image {
   width: 100%;
   height: 325px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.showcase-image a {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+
+.showcase-details {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  padding: 0 0.5em;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-size: 1em;
+  text-align: left;
+  font-family: 'Pontano Sans', sans-serif;
 }
 
 .project-palette {
@@ -236,98 +267,6 @@ html, body {
   background-image: url("/assets/img/projects/project_heartcaller.png");
 }
 
-.project-details {
-  width: 100%;
-  height: auto;
-  margin: auto;
-  padding: 0 0.5em;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  font-size: 1em;
-  text-align: left;
-  font-family: 'Pontano Sans', sans-serif;
-}
-
-/* ==  Gallery Section  == */
-.gallery-section {
-  width: 100%;
-  height: auto;
-  font-size: 2rem;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.gallery-showcase {
-  width: 700px;
-  min-width: 300px;
-  height: auto;
-  margin: 0.5em 2em;
-}
-
-.gallery-embed {
-  width: 100%;
-  height: 50vw;
-  max-height: 500px;
-  min-height: 300px;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
-  background-color: #F5F5F5;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-}
-
-.project-palette {
-  background-position: center;
-  background-image: url("/assets/img/projects/project_project_palette.png");
-}
-
-.abstract-cityscape {
-  background-position: center;
-  background-image: url("/assets/img/projects/project_abstractcityscape.png");
-}
-
-.chess-ai {
-  background-image: url("/assets/img/projects/project_chessai.png");
-}
-
-.code-guild {
-  background-position: center;
-  background-image: url("/assets/img/projects/project_codeguild.png");
-}
-
-.computer-tennis {
-  background-image: url("/assets/img/projects/project_computertennis.png");
-}
-
-.heart-caller {
-  background-position: top;
-  background-image: url("/assets/img/projects/project_heartcaller.png");
-}
-
-.project-details {
-  width: 100%;
-  height: auto;
-  margin: auto;
-  padding: 0 0.5em;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  font-size: 1em;
-  text-align: left;
-  font-family: 'Pontano Sans', sans-serif;
-}
-
 .info-link {
   color: #75B09C;
   text-decoration: none;
@@ -335,24 +274,6 @@ html, body {
 
 .info-link:hover {
   color: #629485;
-}
-
-/* ==  Gallery Section  == */
-.gallery-section {
-  width: 100%;
-  height: auto;
-  font-size: 2rem;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.gallery-showcase {
-  width: 700px;
-  min-width: 300px;
-  height: auto;
-  margin: 0.5em 2em;
 }
 
 .gallery-elm-calculator {
@@ -394,26 +315,9 @@ html, body {
   background-image: url("/assets/img/gallery/gallery_jala.png");
 }
 
-.gallery-description {
-  width: 100%;
-  min-width: 300px;
-}
 
-.gallery-description .underbar {
-  width: 15%;
-  height: 0;
-  margin: 0.7em auto;
-  border: none;
-  border-top: 0.1em solid #454851;
-}
-
-.gallery-description p {
-  padding: 0 0.4em;
-  font-size: 0.5em;
-  font-family: 'Pontano Sans', sans-serif;
-  text-align: center;
-}
-
+/* Bio Section */
+/* =========== */
 .bio-section {
   width: 100%;
   height: auto;
@@ -440,7 +344,7 @@ html, body {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  align-items: flex-start;
+  align-items: stretch;
 }
 
 @media (max-width: 675px) {
@@ -452,7 +356,6 @@ html, body {
 .avatar-image {
   width: 40%;
   min-width: 300px;
-  max-height: 30vw;
   min-height: 300px;
   margin: 0;
   background-color: #2E3138;
@@ -537,6 +440,8 @@ html, body {
   background-size: cover;
 }
 
+/* Footer Section */
+/* ============== */
 .footer {
   width: 100%;
   height: 100px;
@@ -554,6 +459,7 @@ html, body {
 }
 
 /* Animations */
+/* ========== */
 @keyframes fade-in {
   0% {
     opacity: 0;
