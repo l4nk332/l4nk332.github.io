@@ -19,3 +19,7 @@
 
 - Layout adjustments:
   - Gallery items in two columns.
+
+- Fix lighthouse audit and webhint.io reported issues.
+
+- Remove the canvas backdrop and cipher text animation.
