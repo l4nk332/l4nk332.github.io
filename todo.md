@@ -1,21 +1,13 @@
-- Widgets
-  - Elm Clock
-
-- Visualizations
-  - Day and Night City
-
-- Logo Animations
-  - Carbonite
-  - Project-Palette
-
-- Misc
-  - Lightsaber
-  - Starforce
-  - CSS Spinner
-
 - Set up Hotjar
 
 - Set up Sentry
 
-- Layout adjustments:
-  - Gallery items in two columns.
+- Fix links for Cityscape and other showcases.
+
+- Replace CodeGuild with renga in Projects section.
+
+- Possibly replace HeartCaller with other GitHub repo.
+
+- Use renga for 100% of content besides landing section.
+
+- Remove particles / at least the need for jQuery library.

@@ -120,7 +120,7 @@ const SHOWCASES = {
         backgroundImage: 'url("/assets/img/showcases/night_and_day_city.png")'
       },
       url: '',
-      details: 'A black and white minimal animated skyline. I was experimenting with what is possible with just HTML and CSS. No JavaScript logic necessary.'
+      details: 'A black and white minimally animated skyline. I was experimenting with what is possible with just HTML and CSS. No JavaScript logic necessary.'
     },
     {
       name: 'Particles',
