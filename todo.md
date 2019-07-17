@@ -11,3 +11,5 @@
 - Use renga for 100% of content besides landing section.
 
 - Remove particles / at least the need for jQuery library.
+
+- Change use of `em` units to `rem`
