@@ -78,6 +78,7 @@ const SHOWCASES = {
   ],
   widgets: [
     {
+      name: 'Elm Calculator',
       imageStyles: {
         backgroundPosition: 'top',
         backgroundImage: 'url("/assets/img/showcases/elm_calculator.png")'
@@ -86,6 +87,15 @@ const SHOWCASES = {
       details: 'A simple calculator built in Elm.'
     },
     {
+      name: 'Elm Clock',
+      imageStyles: {
+        backgroundImage: 'url("/assets/img/showcases/elm_clock.png")'
+      },
+      url: 'elm-clock.html',
+      details: 'A clock built in Elm with basic stopwatch and timer functionalities.'
+    },
+    {
+      name: 'Just Another List',
       imageStyles: {
         backgroundImage: 'url("/assets/img/showcases/jala.png")'
       },
@@ -95,6 +105,7 @@ const SHOWCASES = {
   ],
   graphics: [
     {
+      name: 'Cube Matrix',
       imageStyles: {
         backgroundPosition: 'center',
         backgroundImage: 'url("/assets/img/showcases/cube_matrix.png")'
@@ -103,6 +114,16 @@ const SHOWCASES = {
       details: 'A 3D cube matrix created with Three.js. Click and drag to move. Pinch to zoom.'
     },
     {
+      name: 'Night and Day City',
+      imageStyles: {
+        backgroundPosition: 'center',
+        backgroundImage: 'url("/assets/img/showcases/night_and_day_city.png")'
+      },
+      url: '',
+      details: 'A black and white minimal animated skyline. I was experimenting with what is possible with just HTML and CSS. No JavaScript logic necessary.'
+    },
+    {
+      name: 'Particles',
       imageStyles: {
         backgroundImage: 'url("/assets/img/showcases/particles.png")'
       },
@@ -112,6 +133,23 @@ const SHOWCASES = {
   ],
   logos: [
     {
+      name: 'Project Palette Logo',
+      imageStyles: {
+        backgroundImage: 'url("/assets/img/showcases/project_palette_logo.png")'
+      },
+      url: '',
+      details: "This is the logo animation that is used to show a loading state when Project Palette (showcased above) is processing a scrape for a given repository."
+    },
+    {
+      name: 'Carbonite Logo',
+      imageStyles: {
+        backgroundImage: 'url("/assets/img/showcases/carbonite_logo.png")'
+      },
+      url: '',
+      details: "An animated logo created for an internal tool called Carbonite, which was used to diff changes made to an application's build source."
+    },
+    {
+      name: 'Marine Layer Logo',
       imageStyles: {
         backgroundImage: 'url("/assets/img/showcases/marine_layer.png")'
       },
@@ -121,6 +159,23 @@ const SHOWCASES = {
   ],
   misc: [
     {
+      name: 'SVG Lightsaber',
+      imageStyles: {
+        backgroundImage: 'url("/assets/img/showcases/svg_lightsaber.png")'
+      },
+      url: '',
+      details: 'A fun little handcrafted SVG of a lightsaber.'
+    },
+    {
+      name: 'Spinner',
+      imageStyles: {
+        backgroundImage: 'url("/assets/img/showcases/spinner.png")'
+      },
+      url: '',
+      details: 'A basic spinner created and animated with CSS.'
+    },
+    {
+      name: 'Cube Flip',
       imageStyles: {
         backgroundImage: 'url("/assets/img/showcases/cube_flip.png")'
       },
