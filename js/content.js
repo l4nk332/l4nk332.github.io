@@ -1,27 +1,6 @@
-import { element } from '../assets/libraries/renga.min.js'
+import { InfoLink } from './components.js'
 
-const { div, a, h3, hr, p, fragment } = element
-
-function InfoLink({text, url}) {
-  return a({href: url, class: 'info-link', target: '_blank'}, text)
-}
-
-function Showcase({name, details, imageStyles, url }) {
-  return (
-    div({class: 'showcase'}, [
-      div({class: 'showcase-image', style: imageStyles},
-        a({href: url, target: '_blank'})
-      ),
-      Boolean(name) && div({class: 'showcase-title'}, [
-        h3(name),
-        hr({class: 'underbar'})
-      ]),
-      div({class: 'showcase-details'}, p(details))
-    ])
-  )
-}
-
-const SHOWCASES = {
+export const SHOWCASES = {
   projects: [
     {
       name: 'Project Palette',
@@ -175,20 +154,12 @@ const SHOWCASES = {
       details: 'A basic spinner created and animated with CSS.'
     },
     {
-      name: 'Cube Flip',
+      name: 'Mandelbrot',
       imageStyles: {
-        backgroundImage: 'url("/assets/img/showcases/cube_flip.png")'
+        backgroundImage: 'url("/assets/img/showcases/mandelbrot.png")'
       },
-      url: 'https://codepen.io/l4nk33/full/jPRgRK/',
-      details: 'A CSS rendering of a cube. JavaScript keypress event handlers allow for the rotation of the cube to a given side (1-6) or the ability to toggle backface-visibility (B).'
+      url: '',
+      details: 'Experimenting with HTML Canvas by graphing mandelbrot sets.'
     }
   ]
 }
-
-window.addEventListener('DOMContentLoaded', event => {
-  Object.entries(SHOWCASES).forEach(([id, showcases]) => {
-    const showcaseSection = document.getElementById(id)
-    showcaseSection.innerHTML = ''
-    showcaseSection.appendChild(fragment(showcases.map(Showcase)))
-  })
-})
