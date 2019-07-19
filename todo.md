@@ -10,4 +10,4 @@
 
 - Use renga for 100% of content besides landing section.
 
-- Change use of `em` units to `rem`
+- Fix lighthouse audit and webhint.io reported issues.
