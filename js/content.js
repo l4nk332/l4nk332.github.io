@@ -3,6 +3,15 @@ import { InfoLink } from './components.js'
 export const SHOWCASES = {
   projects: [
     {
+      name: 'Renga',
+      url: 'https://github.com/l4nk332/renga',
+      imageStyles: {
+        backgroundPosition: 'top center',
+        backgroundImage: 'url("/assets/img/showcases/renga.png")'
+      },
+      details: 'In my frustration with native APIs for creating and templating HTML with vanilla JavaScript I created a simple, lightweight library which allows a developer to create DOM nodes and tree structures in a concise, declarative fasion. For fairly static content that needs to be templated, renga is a fantastic tool. This site is actually built with it 😉.'
+    },
+    {
       name: 'Project Palette',
       url: 'https://project-palette.com/',
       imageStyles: {
@@ -13,7 +22,7 @@ export const SHOWCASES = {
     },
     {
       name: 'Abstract Cityscape 3D',
-      url: 'http://ianjabour.com/abstract_cityscape_3D/',
+      url: 'https://ianjabour.com/Abstract-Cityscape-3D/',
       imageStyles: {
         backgroundPosition: 'center',
         backgroundImage: 'url("/assets/img/showcases/abstractcityscape.png")'
@@ -35,15 +44,6 @@ export const SHOWCASES = {
         backgroundImage: 'url("/assets/img/showcases/computertennis.png")'
       },
       details: 'Computer Tennis is an in-browser game that implements the HTML Canvas API to recreate and add a variety of features to the classic game Pong. As you rally back and forth the velocity of the ball will increase with each collision. When you lose a rally your paddle gets smaller by a fixed percentage, and if you win the rally your paddle will increase by half of that fixed percentage (unless at original paddle size).'
-    },
-    {
-      name: 'Code-Guild',
-      url: 'https://github.com/l4nk332/Code-Guild',
-      imageStyles: {
-        backgroundPosition: 'center',
-        backgroundImage: 'url("/assets/img/showcases/codeguild.png")'
-      },
-      details: 'Code-Guild is a web-platform that connects developers from around the globe in a live coding environment. The platform enables programmers to both teach the languages they are proficient in, while learning the languages that interest them. Code review sessions allow developers to get a second opinion on a module of code within the shared workspace of the application. Technologies implemented include Express, PostgreSQL, Socket.io, and WebRTC.'
     },
     {
       name: 'HeartCaller',
@@ -89,7 +89,7 @@ export const SHOWCASES = {
         backgroundPosition: 'center',
         backgroundImage: 'url("/assets/img/showcases/cube_matrix.png")'
       },
-      url: 'http://codepen.io/l4nk33/live/RGAOor',
+      url: 'https://codepen.io/l4nk33/full/RGAOor',
       details: 'A 3D cube matrix created with Three.js. Click and drag to move. Pinch to zoom.'
     },
     {
@@ -98,7 +98,7 @@ export const SHOWCASES = {
         backgroundPosition: 'center',
         backgroundImage: 'url("/assets/img/showcases/night_and_day_city.png")'
       },
-      url: '',
+      url: 'https://codepen.io/l4nk33/full/xWrpya',
       details: 'A black and white minimally animated skyline. I was experimenting with what is possible with just HTML and CSS. No JavaScript logic necessary.'
     },
     {
@@ -116,7 +116,7 @@ export const SHOWCASES = {
       imageStyles: {
         backgroundImage: 'url("/assets/img/showcases/project_palette_logo.png")'
       },
-      url: '',
+      url: 'https://codepen.io/l4nk33/full/jLyqQq',
       details: "This is the logo animation that is used to show a loading state when Project Palette (showcased above) is processing a scrape for a given repository."
     },
     {
@@ -124,7 +124,7 @@ export const SHOWCASES = {
       imageStyles: {
         backgroundImage: 'url("/assets/img/showcases/carbonite_logo.png")'
       },
-      url: '',
+      url: 'https://codepen.io/l4nk33/full/wmZJYq',
       details: "An animated logo created for an internal tool called Carbonite, which was used to diff changes made to an application's build source."
     },
     {
@@ -132,7 +132,7 @@ export const SHOWCASES = {
       imageStyles: {
         backgroundImage: 'url("/assets/img/showcases/marine_layer.png")'
       },
-      url: 'https://codepen.io/l4nk33/full/VjWjRZ/',
+      url: 'https://codepen.io/l4nk33/full/VjWjRZ',
       details: 'A pure CSS animated implementation of the Marine Layer clothing brand.'
     }
   ],
@@ -142,7 +142,7 @@ export const SHOWCASES = {
       imageStyles: {
         backgroundImage: 'url("/assets/img/showcases/svg_lightsaber.png")'
       },
-      url: '',
+      url: 'https://codepen.io/l4nk33/full/PEjrar',
       details: 'A fun little handcrafted SVG of a lightsaber.'
     },
     {
@@ -150,7 +150,7 @@ export const SHOWCASES = {
       imageStyles: {
         backgroundImage: 'url("/assets/img/showcases/spinner.png")'
       },
-      url: '',
+      url: 'https://codepen.io/l4nk33/full/NRBGVk',
       details: 'A basic spinner created and animated with CSS.'
     },
     {
@@ -158,7 +158,7 @@ export const SHOWCASES = {
       imageStyles: {
         backgroundImage: 'url("/assets/img/showcases/mandelbrot.png")'
       },
-      url: '',
+      url: 'https://ianjabour.com/Mandelbrot/',
       details: 'Experimenting with HTML Canvas by graphing mandelbrot sets.'
     }
   ]
