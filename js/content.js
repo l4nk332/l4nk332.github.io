@@ -3,15 +3,6 @@ import { InfoLink } from './components.js'
 export const SHOWCASES = {
   projects: [
     {
-      name: 'Renga',
-      url: 'https://github.com/l4nk332/renga',
-      imageStyles: {
-        backgroundPosition: 'top center',
-        backgroundImage: 'url("/assets/img/showcases/renga.png")'
-      },
-      details: 'In my frustration with native APIs for creating and templating HTML with vanilla JavaScript I created a simple, lightweight library which allows a developer to create DOM nodes and tree structures in a concise, declarative fasion. For fairly static content that needs to be templated, renga is a fantastic tool. This site is actually built with it 😉.'
-    },
-    {
       name: 'Project Palette',
       url: 'https://project-palette.com/',
       imageStyles: {
@@ -44,15 +35,26 @@ export const SHOWCASES = {
         backgroundImage: 'url("/assets/img/showcases/computertennis.png")'
       },
       details: 'Computer Tennis is an in-browser game that implements the HTML Canvas API to recreate and add a variety of features to the classic game Pong. As you rally back and forth the velocity of the ball will increase with each collision. When you lose a rally your paddle gets smaller by a fixed percentage, and if you win the rally your paddle will increase by half of that fixed percentage (unless at original paddle size).'
+    }
+  ],
+  modules: [
+    {
+      name: 'renga',
+      url: 'https://github.com/l4nk332/renga',
+      imageStyles: {
+        backgroundPosition: 'top center',
+        backgroundImage: 'url("/assets/img/showcases/renga.png")'
+      },
+      details: 'In my frustration with native APIs for creating and templating HTML with vanilla JavaScript I created a simple, lightweight library which allows a developer to create DOM nodes and tree structures in a concise, declarative fashion. For fairly static content that needs to be templated, renga is a fantastic tool for the job (This site is actually built with it 😉).'
     },
     {
-      name: 'HeartCaller',
-      url: 'https://github.com/jameslim1021/HeartCaller',
+      name: 'Conssert',
+      url: 'https://github.com/l4nk332/conssert',
       imageStyles: {
-        backgroundPosition: 'top',
-        backgroundImage: 'url("/assets/img/showcases/heartcaller.png")'
+        backgroundPosition: 'top center',
+        backgroundImage: 'url("/assets/img/showcases/conssert.png")'
       },
-      details: "This hackathon winning submission utilizes iHeart Radio's API along with Socket.io in order to reimplement and redesign the User Experience of listening to radio online. Tearing down the invisible walls between radio hosts and their listeners, HeartCaller allows hosts and djs to directly take song request from their listeners through a live socket connection. Using Node's Express framework routes were set up to handle the logic that tied a host's socket directly to each listener. With nothing more than css flexbox, the layout was handcrafted into a responsive, mobile-first design."
+      details: 'Conssert is a zero-config testing framework that runs in your browser. The library aims to provide a clean, simple interface for writing tests around client-side facing code. Because it runs in the browser tested code can use new, browser-supported syntax without needing to transpile (as with node-based testing frameworks).'
     }
   ],
   widgets: [
