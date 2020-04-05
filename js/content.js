@@ -140,20 +140,20 @@ export const SHOWCASES = {
   ],
   misc: [
     {
+      name: 'Pico Snake',
+      imageStyles: {
+        backgroundImage: 'url("/assets/img/showcases/pico_snake.png")'
+      },
+      url: '/pico_snake.html',
+      details: 'My first time playing around with lua / pico-8.'
+    },
+    {
       name: 'SVG Lightsaber',
       imageStyles: {
         backgroundImage: 'url("/assets/img/showcases/svg_lightsaber.png")'
       },
       url: 'https://codepen.io/l4nk33/full/PEjrar',
       details: 'A fun little handcrafted SVG of a lightsaber.'
-    },
-    {
-      name: 'Spinner',
-      imageStyles: {
-        backgroundImage: 'url("/assets/img/showcases/spinner.png")'
-      },
-      url: 'https://codepen.io/l4nk33/full/NRBGVk',
-      details: 'A basic spinner created and animated with CSS.'
     },
     {
       name: 'Mandelbrot',
