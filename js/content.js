@@ -28,14 +28,6 @@ export const SHOWCASES = {
       },
       details: ['This project focuses on computer science concepts such as data structures and algorithms. Through utilization of a decision tree the AI can generate the all possible permutations of a chessboard 3 moves into the future. Algorithms implemented in this project include depth first search, minimax, and alpha-beta pruning. This in conjunction with heuristics such as material, number of possible legal moves with emphasis on center squares, check/checkmate status, and pawn structure allow the AI to make the best possible move. ', InfoLink({url:"https://www.youtube.com/watch?v=uA0QOQDDKMw", text: 'Check out this video'}), ' Galvanize made on my team and the Chess-AI project.']
     },
-    {
-      name: 'Computer Tennis',
-      url: 'https://github.com/l4nk332/computer-tennis',
-      imageStyles: {
-        backgroundImage: 'url("/assets/img/showcases/computertennis.png")'
-      },
-      details: 'Computer Tennis is an in-browser game that implements the HTML Canvas API to recreate and add a variety of features to the classic game Pong. As you rally back and forth the velocity of the ball will increase with each collision. When you lose a rally your paddle gets smaller by a fixed percentage, and if you win the rally your paddle will increase by half of that fixed percentage (unless at original paddle size).'
-    }
   ],
   modules: [
     {
@@ -56,6 +48,32 @@ export const SHOWCASES = {
       },
       details: 'Conssert is a zero-config testing framework that runs in your browser. The library aims to provide a clean, simple interface for writing tests around client-side facing code. Because it runs in the browser tested code can use new, browser-supported syntax without needing to transpile (as with node-based testing frameworks).'
     }
+  ],
+  games: [
+    {
+      name: 'Computer Tennis',
+      url: 'https://github.com/l4nk332/computer-tennis',
+      imageStyles: {
+        backgroundImage: 'url("/assets/img/showcases/computertennis.png")'
+      },
+      details: 'Built in vanilla JS using the HTML Canvas API, Computer Tennis is a reimplementation of the classic game Pong.'
+    },
+    {
+      name: 'Pico Snake',
+      imageStyles: {
+        backgroundImage: 'url("/assets/img/showcases/pico_snake.png")'
+      },
+      url: '/pico_snake.html',
+      details: 'My first time playing around with lua / pico-8.'
+    },
+    {
+      name: 'Pico Blackjack',
+      imageStyles: {
+        backgroundImage: 'url("/assets/img/showcases/pico_blackjack.png")'
+      },
+      url: '/black_jack.html',
+      details: 'A blackjack game built in lua for the pico-8 system.'
+    },
   ],
   widgets: [
     {
@@ -139,14 +157,6 @@ export const SHOWCASES = {
     }
   ],
   misc: [
-    {
-      name: 'Pico Snake',
-      imageStyles: {
-        backgroundImage: 'url("/assets/img/showcases/pico_snake.png")'
-      },
-      url: '/pico_snake.html',
-      details: 'My first time playing around with lua / pico-8.'
-    },
     {
       name: 'SVG Lightsaber',
       imageStyles: {
